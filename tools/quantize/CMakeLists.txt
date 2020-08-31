@@ -1,6 +1,6 @@
-find_package(OpenCV PATHS ${CMAKE_SOURCE_DIR}/../opencv/lib/cmake/opencv4 QUIET COMPONENTS core highgui imgproc imgcodecs)
+find_package(OpenCV PATHS ${CMAKE_SOURCE_DIR}/../opencv/share/OpenCV QUIET COMPONENTS core highgui imgproc imgcodecs)
 if(NOT OpenCV_FOUND)
-    find_package(OpenCV PATHS ${CMAKE_SOURCE_DIR}/../opencv/lib/cmake/opencv4 QUIET COMPONENTS core highgui imgproc)
+    find_package(OpenCV PATHS ${CMAKE_SOURCE_DIR}/../opencv/share/OpenCV QUIET COMPONENTS core highgui imgproc)
 endif()
 
 if(OpenCV_FOUND)
